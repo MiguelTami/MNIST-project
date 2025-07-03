@@ -1,0 +1,15 @@
+# Ignorar datos originales
+data/raw/
+
+# Checkpoints automáticos de notebooks
+.ipynb_checkpoints/
+
+# Archivos de sistema
+__pycache__/
+*.pyc
+
+# Modelos y archivos grandes
+*.pkl
+*.h5
+*.pt
+*.npz
