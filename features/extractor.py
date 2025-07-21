@@ -23,3 +23,8 @@ def simetria_vertical(img):
 def centro_masa_vertical(img):
     """Ubicación vertical del centro de masa (valor entre 0 y 28)."""
     return center_of_mass(img)[0]
+
+def simetria_horizontal(img):
+    """Diferencia entre la imagen y su reflejo horizontal."""
+    simetria = np.abs(img - np.flipud(img)).sum()
+    return simetria / img.size
